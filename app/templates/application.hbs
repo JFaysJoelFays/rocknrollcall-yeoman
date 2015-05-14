@@ -7,12 +7,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{RocknrollcallYeoman.applicationName}}</a>
+            {{#link-to "index" class="navbar-brand"}}{{RocknrollcallYeoman.applicationName}}{{/link-to}}
         </div>
         <div id="navbar-collapse-1" class="collapse navbar-collapse">
             <ul class="nav navbar-nav search-lockup">
                 <li class="search-group">
-                    <input class="search-input" placeholder="Search for artists or song names" />
+                    {{input type="text" class="search-input" placeholder="Search for artists or song names"}}
                     <button class="btn btn-primary"><i class="glyphicon glyphicon-play"></i></button>
                 </li>
             </ul>
@@ -30,7 +30,7 @@
 </div>
 <footer>
     <p>
-       <i class="glyphicon glyphicon-cpyright-mark"></i> 2015 Companion to O'Reilly's
+       <i class="glyphicon glyphicon-copyright-mark"></i> 2015 Companion to O'Reilly's
            <em>Building Web Apps with Ember.js: Write Ambitious Javascript</em>
            <a href="http://twitter.com/emberbook">@emberbook</a>
     </p>
