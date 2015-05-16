@@ -20,7 +20,7 @@ RocknrollcallYeoman.SearchResultsRoute = Ember.Route.extend({
 					type: 'artist',
 					name: entry.name,
 					hotttnesss: entry.hotttnesss,
-					enid: entry.enid
+					enid: entry.id
 				}));
 			}
 			

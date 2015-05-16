@@ -2,7 +2,7 @@
 RocknrollcallYeoman.ArtistRoute = Ember.Route.extend({
 	model: function(params) {
 		
-		var url = "http://developper.echonest.com/api/v4/artist/profile?apt_key=OWT9MJ1GSZGEKSQC1&format=json&bucket=biographies&bucket=blogs&bucket=familiarity&bucket=hotttnesss&bucket=images&bucket=news&bucket=reviews&bucket=terms&bucket=urls&bucket=video&bucket=id:mustcbrainz",
+		var url = "http://developer.echonest.com/api/v4/artist/profile?api_key=OWT9MJ1GSZGEKSQC1&format=json&bucket=biographies&bucket=blogs&bucket=familiarity&bucket=hotttnesss&bucket=images&bucket=news&bucket=reviews&bucket=terms&bucket=urls&bucket=video&bucket=id:musicbrainz",
 			obj = {"id": params.enid};
 					
 		return Ember.$.getJSON(url, obj)
@@ -10,8 +10,9 @@ RocknrollcallYeoman.ArtistRoute = Ember.Route.extend({
 				var entry = data.response.artist;
 				var bio = null;
 				var img = null;
+				var i = 0;
 				for (i = 0; i < entry.biographies.length; i++) {
-					if (entry.biographies[i].site.toLowercase() == "wikipedia") {
+					if (entry.biographies[i].site.toLowerCase() == "wikipedia") {
 						bio = entry.biographies[i];
 					}
 				}
