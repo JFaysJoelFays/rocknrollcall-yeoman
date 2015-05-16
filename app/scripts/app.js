@@ -7,7 +7,7 @@ RocknrollcallYeoman.applicationName = "Rock'n'Roll Call";
 RocknrollcallYeoman.dummySearchResultsArtists = [
 	{
 		id: 1,
-		name: 'Tom Watts',
+		name: 'Tom Waits',
 		type: 'artist',
 		enid: 'ARERLPG1187FB3BB39',
 		hotttnesss: '1'
