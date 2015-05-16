@@ -3,7 +3,16 @@ var RocknrollcallYeoman = window.RocknrollcallYeoman = Ember.Application.create(
 	LOG_ACTIVE_GENERATION: true
 });
 
-RocknrollcallYeoman.applicationName = "Rock'n'Roll Call";
+RocknrollcallYeoman.ApplicationController = Em.ObjectController.extend({
+	searchTerms: '',
+	applicationName: "Rock'n'Roll Call",
+	actions: {
+		submit: function() {
+			this.trasitionToRoute('search-results', this.get('searchTerms'));
+		}
+	}
+});
+
 
 /*
 RocknrollcallYeoman.dummySearchResultsArtists = [
