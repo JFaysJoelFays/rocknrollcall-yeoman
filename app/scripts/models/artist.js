@@ -1,5 +1,5 @@
 /// <reference path="../../../typings/ember/ember.d.ts"/>
-RocknrollcallYeaoman.Artits = Em.Object.extend({
+RocknrollcallYeoman.Artits = Em.Object.extend({
 	id: null,
 	name: null,
 	enid: null,
