@@ -1,6 +1,8 @@
 RocknrollcallYeoman.Router.map(function () {
   // Add your routes here
-  this.route('search-results');
+  this.route('search-results', {
+    path: 'search/:term'
+  });
   this.route('artist');
-  this.routr('song');
+  this.route('song');
 });
