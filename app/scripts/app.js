@@ -5,6 +5,7 @@ var RocknrollcallYeoman = window.RocknrollcallYeoman = Ember.Application.create(
 
 RocknrollcallYeoman.applicationName = "Rock'n'Roll Call";
 
+/*
 RocknrollcallYeoman.dummySearchResultsArtists = [
 	{
 		id: 1,
@@ -28,6 +29,7 @@ RocknrollcallYeoman.dummySearchResultsArtists = [
 		hotttnesss: '.79'
 	}
 ];
+*/
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
