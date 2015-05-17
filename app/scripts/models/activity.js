@@ -6,6 +6,7 @@ RocknrollcallYeoman.Activity = DS.Model.extend({
 	timestamp: DS.attr()
 });
 
+/*
 RocknrollcallYeoman.Activity.FIXTURES = [{
 	id: 0,
 	display_id: "Activity1",
@@ -21,3 +22,4 @@ RocknrollcallYeoman.Activity.FIXTURES = [{
 	hotttnesss: 99,
 	timestamp: "Fri Dec 06 2013 01:05:53 GMT-0600 (CST)"
 }];
+*/
