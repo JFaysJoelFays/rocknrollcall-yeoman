@@ -2,7 +2,7 @@
   "name": "rocknrollcall-yeoman",
   "version": "0.0.0",
   "dependencies": {
-    "ember": "1.7.0",
+    "ember": "1.8.0",
     "handlebars": "1.3.0",
     "ember-data": "1.0.0-beta.10",
     "ember-localstorage-adapter": "latest",
