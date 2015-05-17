@@ -9,9 +9,9 @@ RocknrollcallYeoman.ApplicationController = Em.ObjectController.extend({
 	applicationName: function() {
 		var st = this.get('searchTerms');
 		if (st) {
-			return st + "???"
+			return st + "???";
 		} else {
-			return "Rock'n'Roll Call"
+			return "Rock'n'Roll Call";
 		}
 	}.property('searchTerms'),
 	actions: {
@@ -23,6 +23,7 @@ RocknrollcallYeoman.ApplicationController = Em.ObjectController.extend({
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
+require('scripts/components/*');
 require('scripts/store');
 require('scripts/models/*');
 require('scripts/routes/*');
@@ -30,6 +31,7 @@ require('scripts/components/*');
 require('scripts/views/*');
 require('scripts/router');
 
+/*
 Ember.Application.initializer({
 	name: "DBSeeds",
 	initialize: function(container, application) {
@@ -80,6 +82,7 @@ Ember.Application.initializer({
 		);
 	}
 });
+*/
 
 Ember.Handlebars.helper('hotttnesss-badge', function(value, options) {
 	var h = parseFloat(value);
