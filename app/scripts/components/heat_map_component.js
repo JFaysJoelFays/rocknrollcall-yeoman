@@ -13,12 +13,13 @@ RocknrollcallYeoman.HeatMapComponent = Ember.Component.extend({
 	draw: function(myData) {
 		var self = this;
 		this.set('data', myData);
-		var svg = d3.select('#' + self.get('elementId'));
 		var colorScale = d3.scale.quantile()
 			.domain([10, 100])
 			.range(self.colors);
 			
-		var svg = d3.select('#chart').append("svg")
+		//var svg = d3.select('#chart')
+		var svg = d3.select('#' + self.get('elementId'))
+			.append("svg")
 			.attr("width", self.width + self.margin.left + self.margin.right)
 			.attr("height", self.height + self.margin.top + self.margin.bottom)
 			.append("g")
@@ -63,7 +64,8 @@ RocknrollcallYeoman.HeatMapComponent = Ember.Component.extend({
 
 		var legend = svg.selectAll(".legend")
 			.data([0].concat(colorScale.quantiles()), function(d) { return d; })
-			.enter().append("g")
+			.enter()
+			.append("g")
 			.attr("class", "legend");
 			
 		legend.append("rect")
