@@ -29,7 +29,7 @@ RocknrollcallYeoman.HeatMapComponent = Ember.Component.extend({
 			.enter().append("text")
 			.text(function(d) { return d; })
 			.attr("x", 0)
-			.attr("y", function(d, i) { return t * self.gridSize; })
+			.attr("y", function(d, i) { return i * self.gridSize; })
 			.style("text-anchor", "end")
 			.attr("transform", "translate(-6," + self.gridSize / 1.5 + ")")
 			.attr("class", function(d, i) { return ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-workweek" : "dayLabel mono axis"); });
