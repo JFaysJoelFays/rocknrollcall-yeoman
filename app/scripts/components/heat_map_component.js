@@ -22,7 +22,7 @@ RocknrollcallYeoman.HeatMapComponent = Ember.Component.extend({
 			.attr("width", self.width + self.margin.left + self.margin.right)
 			.attr("height", self.height + self.margin.top + self.margin.bottom)
 			.append("g")
-				.attr("transform", "translate(" + self.margin.left + "," + self.margin.top + ")");
+			.attr("transform", "translate(" + self.margin.left + "," + self.margin.top + ")");
 
 		var dayLabels = svg.selectAll(".dayLabel")
 			.data(self.days)
@@ -88,7 +88,7 @@ RocknrollcallYeoman.HeatMapComponent = Ember.Component.extend({
 			var row = {};
 			row.day = date.getDay() + 1;
 			row.hour = date.getHours() + 1;
-			row.value = data[i].get('hotttnesss');
+			row.value = data[i].get('hotttnesss') * 100;
 			hotnessArray.push(row);
 		}
 		this.draw(hotnessArray);
